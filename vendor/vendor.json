@@ -1,6 +1,121 @@
 {
 	"comment": "",
 	"ignore": "test",
-	"package": [],
+	"package": [
+		{
+			"checksumSHA1": "pXA0VXOMBMY18/4WFJjqnsT51jo=",
+			"path": "github.com/dchest/uniuri",
+			"revision": "8902c56451e9b58ff940bbe5fec35d5f9c04584a",
+			"revisionTime": "2016-02-12T16:43:26Z"
+		},
+		{
+			"checksumSHA1": "uC0/YlX5RUmxgBWUtR8J2QBWEIo=",
+			"path": "github.com/go-playground/locales",
+			"revision": "e4cbcb5d0652150d40ad0646651076b6bd2be4f6",
+			"revisionTime": "2017-10-14T05:53:35Z"
+		},
+		{
+			"checksumSHA1": "YWIa2z/i81ttb1Db9fm95XnIgwI=",
+			"path": "github.com/go-playground/locales/currency",
+			"revision": "e4cbcb5d0652150d40ad0646651076b6bd2be4f6",
+			"revisionTime": "2017-10-14T05:53:35Z"
+		},
+		{
+			"checksumSHA1": "7QcjNTtW0Rc/5BPw1MPaQ6YNjso=",
+			"path": "github.com/go-playground/universal-translator",
+			"revision": "71201497bace774495daed26a3874fd339e0b538",
+			"revisionTime": "2017-03-27T19:17:03Z"
+		},
+		{
+			"checksumSHA1": "ucTBCc7dDRKLGPsYfAzu/Gq63qA=",
+			"path": "github.com/gorilla/securecookie",
+			"revision": "e59506cc896acb7f7bf732d4fdf5e25f7ccd8983",
+			"revisionTime": "2017-02-24T19:38:04Z"
+		},
+		{
+			"checksumSHA1": "T+kh2poktvucf6QrY3nRo09otto=",
+			"path": "github.com/julienschmidt/httprouter",
+			"revision": "d1898390779332322e6b5ca5011da4bf249bb056",
+			"revisionTime": "2018-02-22T16:05:26Z"
+		},
+		{
+			"checksumSHA1": "3BB6dVZrdVeiPP+v8JQWjFINKqE=",
+			"path": "github.com/qjw/kelly",
+			"revision": "8029aba6945b04ca8b04627c5f9df04e1ab9e35f",
+			"revisionTime": "2017-11-01T13:19:42Z"
+		},
+		{
+			"checksumSHA1": "GXIgLWYUk6wEJM1QwAL9ox1xUb8=",
+			"path": "github.com/qjw/kelly/binding",
+			"revision": "8029aba6945b04ca8b04627c5f9df04e1ab9e35f",
+			"revisionTime": "2017-11-01T13:19:42Z"
+		},
+		{
+			"checksumSHA1": "ZO8Et7ttqZa1iNAuSeQiGlEt6lI=",
+			"path": "github.com/qjw/kelly/middleware",
+			"revision": "8029aba6945b04ca8b04627c5f9df04e1ab9e35f",
+			"revisionTime": "2017-11-01T13:19:42Z"
+		},
+		{
+			"checksumSHA1": "2kejdxvKRwTsgP/vTj8BssVd5x4=",
+			"path": "github.com/qjw/kelly/render",
+			"revision": "8029aba6945b04ca8b04627c5f9df04e1ab9e35f",
+			"revisionTime": "2017-11-01T13:19:42Z"
+		},
+		{
+			"checksumSHA1": "QD3JgZtOYFEUtFW8Uu7WxdQK1Rw=",
+			"path": "github.com/qjw/kelly/sessions",
+			"revision": "8029aba6945b04ca8b04627c5f9df04e1ab9e35f",
+			"revisionTime": "2017-11-01T13:19:42Z"
+		},
+		{
+			"checksumSHA1": "wWhBVw5JhTUIbBstf20hucDfY/o=",
+			"path": "github.com/urfave/negroni",
+			"revision": "22c5532ea862c34fdad414e90f8cc00b4f6f4cab",
+			"revisionTime": "2018-01-30T04:45:49Z"
+		},
+		{
+			"checksumSHA1": "PkwzxyohgCDlL/5fN62PFuGetjk=",
+			"path": "gopkg.in/go-playground/validator.v9",
+			"revision": "1b8c8e19cd250435025214492d9a08411d760fdd",
+			"revisionTime": "2018-03-05T15:02:40Z"
+		},
+		{
+			"checksumSHA1": "OU/wHTJqhyQfyRnXMVWx1Ox06kQ=",
+			"path": "gopkg.in/redis.v5",
+			"revision": "a16aeec10ff407b1e7be6dd35797ccf5426ef0f0",
+			"revisionTime": "2017-03-04T11:38:25Z"
+		},
+		{
+			"checksumSHA1": "efyYmNqK7vcPhXW4KXfwbdA1wr4=",
+			"path": "gopkg.in/redis.v5/internal",
+			"revision": "a16aeec10ff407b1e7be6dd35797ccf5426ef0f0",
+			"revisionTime": "2017-03-04T11:38:25Z"
+		},
+		{
+			"checksumSHA1": "2Ek4SixeRSKOX3mUiBMs3Aw+Guc=",
+			"path": "gopkg.in/redis.v5/internal/consistenthash",
+			"revision": "a16aeec10ff407b1e7be6dd35797ccf5426ef0f0",
+			"revisionTime": "2017-03-04T11:38:25Z"
+		},
+		{
+			"checksumSHA1": "rJYVKcBrwYUGl7nuuusmZGrt8mY=",
+			"path": "gopkg.in/redis.v5/internal/hashtag",
+			"revision": "a16aeec10ff407b1e7be6dd35797ccf5426ef0f0",
+			"revisionTime": "2017-03-04T11:38:25Z"
+		},
+		{
+			"checksumSHA1": "zsH5BF9qc31R7eEEVYLsjbIigDQ=",
+			"path": "gopkg.in/redis.v5/internal/pool",
+			"revision": "a16aeec10ff407b1e7be6dd35797ccf5426ef0f0",
+			"revisionTime": "2017-03-04T11:38:25Z"
+		},
+		{
+			"checksumSHA1": "EqPdu5g8NhzxQOMCvzbreTQlzVE=",
+			"path": "gopkg.in/redis.v5/internal/proto",
+			"revision": "a16aeec10ff407b1e7be6dd35797ccf5426ef0f0",
+			"revisionTime": "2017-03-04T11:38:25Z"
+		}
+	],
 	"rootPath": "github.com/qjw/kubeui"
 }

@@ -1,3 +1,6 @@
 vendor/*/
 .vscode/
 sample/sample
+kubeui
+frontend/
+*.tar.*

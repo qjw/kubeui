@@ -1,0 +1,24 @@
+[
+	{
+		"route": "/namespaces",
+		"name": "命名空间",
+		"icon": "user",
+		"children": [{
+			"mpid": -1,
+			"route": "/secrets/:namespace",
+			"name": "密码",
+			"icon": "user",
+			"children": [{
+				"mpid": -1,
+				"route": "/secrets/:namespace/detail/:id",
+				"name": "密码详情",
+				"icon": "user"
+			}]
+		}]
+	},
+	{
+		"route": "/test",
+		"name": "测试",
+		"icon": "api"
+	}
+]
