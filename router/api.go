@@ -6,6 +6,7 @@ import (
 
 	"github.com/elazarl/go-bindata-assetfs"
 	"github.com/qjw/kelly"
+	md "github.com/qjw/kelly/middleware"
 	"github.com/qjw/kubeui/config"
 	"github.com/qjw/kubeui/service"
 )
@@ -18,13 +19,15 @@ func Init(r kelly.Router, api service.KubeApi) {
 	r.GET("/", func(c *kelly.Context) {
 		c.Redirect(http.StatusFound, "/frontend")
 	})
-	r.GET("/frontend/*path", func() func(*kelly.Context) {
-		fs := &assetfs.AssetFS{Asset: Asset, AssetDir: AssetDir, AssetInfo: AssetInfo, Prefix: ""}
-		h := http.FileServer(fs)
-		return func(c *kelly.Context) {
-			h.ServeHTTP(c, c.Request())
-		}
-	}())
+	r.GET("/frontend/*path",
+		md.Gzip(md.BestSpeed, md.GzipMethod),
+		func() func(*kelly.Context) {
+			fs := &assetfs.AssetFS{Asset: Asset, AssetDir: AssetDir, AssetInfo: AssetInfo, Prefix: ""}
+			h := http.FileServer(fs)
+			return func(c *kelly.Context) {
+				h.ServeHTTP(c, c.Request())
+			}
+		}())
 
 	// 绑定所有的options请求来支持中间件作跨域处理
 	r.OPTIONS("/*path", func(c *kelly.Context) {
